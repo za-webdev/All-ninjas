@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Ninjas</title>
+
+</head>
+<body>
+		{%if allNinjas == True%}
+			<img src="{{url_for('static',filename='images/Ninjas/tmnt.png')}}">
+		{%endif%}
+		{%if allNinjas==False%}
+
+		{%if color=='blue'%}
+			<img src="{{url_for('static',filename='images/Ninjas/leonardo.jpg')}}">
+		{%elif color=='orange'%}
+			<img src="{{url_for('static',filename='images/Ninjas/michelangelo.jpg')}}">
+		{%elif color=='red'%}
+			<img src="{{url_for('static',filename='images/Ninjas/raphael.jpg')}}">
+		{%elif color=='purple'%}
+			<img src="{{url_for('static',filename='images/Ninjas/donatello.jpg')}}">
+		{%else%}
+			<img src="{{url_for('static',filename='images/Ninjas/notapril.jpg')}}">
+		
+	
+		{%endif%}
+
+		{%endif%}
+</body>
+</html>
+
+
